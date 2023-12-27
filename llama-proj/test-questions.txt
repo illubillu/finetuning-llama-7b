@@ -1,0 +1,3 @@
+What are the anomalies in EMP_DEPT relation?
+
+What is the normal form of DEPT_LOCATIONS relation

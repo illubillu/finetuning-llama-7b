@@ -1,0 +1,252 @@
+Define the following terms: data model, database schema, database state,
+internal schema, conceptual schema, external schema, data independence,
+DDL, DML, SDL, VDL, query language, host language, data sublanguage,
+database utility, catalog, client/server architecture, three-tier architecture,
+and n-tier architecture.
+
+A data model is a conceptual representation of data and its relationships. It defines the structure of the data, including the types of data elements, their attributes, and the relationships between them. A database schema is a specific implementation of a data model, which defines the organization and structure of the data in a database.
+
+Database state refers to the current values of the data elements in a database, including their attributes and relationships. Internal schema refers to the database schema as it exists within the database management system, while external schema refers to the database schema as it is perceived by external users.
+
+Conceptual schema is a high-level representation of the data and its relationships, as seen by the end-user. It is often used to communicate the overall structure and organization of the data to non-technical users. Data independence is the ability of a database to change without affecting the applications that access it.
+
+DDL (Data Definition Language) is a language used to define the structure of a database, including the creation and modification of database schemas. DML (Data Manipulation Language) is a language used to manipulate data in a database, such as inserting, updating, and deleting data. SDL (Structured Query Language) is a query language used to retrieve and manipulate data in a database. VDL (Visual Data Language) is a visual language used to create and manipulate database schemas and queries.
+
+Query language is a language used to specify the structure and content of queries, while host language is the programming language used to access and manipulate the data in a database. Data sublanguage is a simplified language used to access and manipulate data in a database, often used by end-users.
+
+A database utility is a tool used to manage and maintain a database, such as backup and recovery utilities. A catalog is a database that contains information about the data and structures of a database, including the schema, data definitions, and other metadata.
+
+Client/server architecture refers to a design in which the database management system is accessed through a client application, which communicates with the database server to retrieve and manipulate data. Three-tier architecture refers to a design in which the presentation layer, application logic layer, and data storage layer are separated into distinct tiers, each of which communicates with the other through a well-defined interface.
+
+N-tier architecture refers to a design in which the presentation layer, application logic layer, and data storage layer are separated into multiple tiers, each of which communicates with the other through a well-defined interface. This allows for greater flexibility and scalability in the design.
+-----------
+Discuss the conventions for displaying an ER schema as an ER diagram.
+Conventions for displaying an ER schema as an ER diagram
+ER diagrams are graphical representations of an entity-relationship (ER) schema, which is a conceptual data model used to represent data and its relationships in a database. The following are some common conventions for displaying an ER schema as an ER diagram:
+1. Use rectangles to represent entities: Entities are represented by rectangles, which are usually filled with a color to distinguish them from other diagram elements.
+2. Use lines to represent relationships: Relationships are represented by lines connecting entities. The type of relationship is indicated by the line style and arrowheads. For example, a solid line indicates a one-to-one relationship, while a dotted line indicates a many-to-many relationship.
+3. Use labels to identify entities and relationships: Each entity and relationship is labeled with a brief descriptive name. This helps to clarify the meaning of the diagram and make it easier to understand.
+4. Use colors to highlight important information: Colors can be used to highlight important information, such as key entities or relationships, or to distinguish between different entities or relationships.
+5. Use a consistent scale: Use a consistent scale for all entities and relationships to make the diagram easy to read and understand.
+6. Use a standard notation: Use a standard notation for ER diagrams, such as the Chen notation, to ensure consistency and clarity.
+7. Avoid overlapping entities and relationships: Make sure that each entity and relationship is clearly defined and not overlapping with any other entity or relationship.
+8. Use a logical orientation: Use a logical orientation for the diagram, with the entities and relationships arranged in a way that makes sense for the data being modeled.
+9. Use notes and attributes: Use notes and attributes to provide additional information about the entities and relationships, such as data types or constraints.
+10. Use a clear and concise labeling: Use a clear and concise labeling for each entity and relationship, and make sure that the labels are easy to read and understand.
+By following these conventions, an ER diagram can be used to effectively represent an ER schema and communicate the relationships between entities in a database.
+-----------
+Discuss the naming conventions used for ER schema diagrams.
+ER (Entity-Relationship) schema diagrams are used to represent the relationships between entities in a database. Naming conventions are important in ER schema diagrams to ensure that the diagrams are clear, consistent, and easy to understand. Here are some common naming conventions used in ER schema diagrams:
+
+1. Entity Names:
+
+Entity names should be singular and in lowercase. They should be descriptive and clearly indicate the type of entity being represented. For example, "Customer", "Supplier", "Product", etc.
+
+2. Attribute Names:
+
+Attribute names should be singular and in lowercase. They should be descriptive and clearly indicate the type of attribute being represented. For example, "customer_id", "supplier_id", "product_name", etc.
+
+3. Relationship Names:
+
+Relationship names should be singular and in lowercase. They should be descriptive and clearly indicate the relationship between the entities. For example, "customer_supplier", "product_supplier", "customer_product", etc.
+
+4. Key Names:
+
+Key names should be singular and in lowercase. They should be descriptive and clearly indicate the type of key being represented. For example, "customer_id_key", "supplier_id_key", "product_id_key", etc.
+
+5. Foreign Key Names:
+
+Foreign key names should be singular and in lowercase. They should be descriptive and clearly indicate the relationship between the entities. For example, "customer_supplier_id_key", "product_supplier_id_key", etc.
+
+6. Table Names:
+
+Table names should be singular and in lowercase. They should be descriptive and clearly indicate the type of table being represented. For example, "customer_table", "supplier_table", "product_table", etc.
+
+7. Column Names:
+
+Column names should be singular and in lowercase. They should be descriptive and clearly indicate the type of column being represented. For example, "customer_id", "supplier_id", "product_name", etc.
+
+8. Primary Key Names:
+
+Primary key names should be singular and in lowercase. They should be descriptive and clearly indicate the type of primary key being represented. For example, "customer_id_primary_key", "supplier_id_primary_key", etc.
+
+9. Foreign Key Names:
+
+Foreign key names should be singular and in lowercase. They should be descriptive and clearly indicate the relationship between the entities. For example, "customer_supplier_id_foreign_key", "product_supplier_id_foreign_key", etc.
+
+10. Table Alias Names:
+
+Table alias names should be singular and in lowercase. They should be descriptive and clearly indicate the table being represented. For example, "cust_table", "supp_table", "prod_table", etc.
+
+By following these naming conventions, ER schema diagrams can be more easily understood and maintained, and they can help to ensure that the database design is consistent and well-organized.
+-----------
+Explain what alternative choices exist for accessing a file based on multiple
+search keys.
+
+In a file system, when a user searches for a file using a single search key, the file system returns all the files that match the search key. However, in some cases, the user may want to search for files based on multiple search keys. For example, a user may want to search for all files that contain the word "project" in the title, and also have a modification date within the past week.
+
+There are several alternative choices for accessing a file based on multiple search keys:
+
+1. Multi-level indexing: In this approach, the file system creates separate indexes for each search key. When a user searches for a file, the file system uses the appropriate index to quickly locate the file. For example, if the user is searching for files with both the word "project" in the title and a modification date within the past week, the file system would use two separate indexes: one for the word "project" and one for the modification date.
+2. Full-text search: In this approach, the file system uses a full-text search engine to search for files based on multiple search keys. The full-text search engine can search for specific words or phrases within the file contents, and can also take into account the context of the search terms. For example, if the user is searching for files with both the word "project" in the title and the word "management" in the contents, the full-text search engine would return all files that contain both of these words in a relevant context.
+3. Faceted search: In this approach, the file system provides a faceted search interface that allows the user to narrow down the search results based on multiple criteria. For example, the user may be able to select multiple search terms, such as "project" and "management", and also select specific date ranges or file types. The file system would then return a list of files that match all of the selected criteria.
+4. Natural language search: In this approach, the file system uses natural language processing techniques to understand the user's search query and return relevant files based on the context of the search terms. For example, if the user types "Find all files related to project management", the file system would return all files that contain the words "project" and "management" in a relevant context.
+5. Hybrid search: In this approach, the file system combines multiple search techniques, such as multi-level indexing, full-text search, and faceted search, to provide a more comprehensive search capability. For example, the file system may use multi-level indexing to quickly locate files with specific keywords in the title, and then use full-text search to search the contents of those files for additional relevant terms.
+
+Each of these alternative choices has its own advantages and disadvantages, and the choice of which approach to use will depend on the specific requirements of the file system and the user's search needs.
+-----------
+Discuss the different algorithms for implementing each of the following rela-
+tional operators and the circumstances under which each algorithm can be used: SELECT, JOIN, PROJECT, UNION, INTERSECT, SET DIFFERENCE,
+CARTESIAN PRODUCT. everybody knows the basic syntax of these operators but it is important to understand the algorithms used to implement them.
+
+1. SELECT:
+There are several algorithms for implementing the SELECT operator, including:
+* Simple Selection: This algorithm selects all the tuples from the input relation that match the selection criteria. It is the most straightforward algorithm and is used for simple selection queries.
+* Projection: This algorithm projects the input relation onto a subset of the columns specified in the selection criteria. It is useful when the selection criteria is a subset of the columns in the input relation.
+* Sort-and-Project: This algorithm first sorts the input relation based on the selection criteria, and then projects the sorted relation onto a subset of the columns specified in the selection criteria. It is useful when the selection criteria is a subset of the columns in the input relation and the relation is too large to fit in memory.
+* Index-based Selection: This algorithm uses an index on the columns specified in the selection criteria to quickly locate the matching tuples in the input relation. It is useful when the selection criteria is a subset of the columns in the input relation and the relation is too large to fit in memory.
+* Join-based Selection: This algorithm uses a join operation to combine the input relation with another relation that contains the selection criteria, and then projects the resulting relation onto a subset of the columns specified in the selection criteria. It is useful when the selection criteria is a subset of the columns in the input relation and the relation is too large to fit in memory.
+2. JOIN:
+There are several algorithms for implementing the JOIN operator, including:
+* Inner Join: This algorithm returns only the tuples that have matching values in both relations.
+* Left Join: This algorithm returns all the tuples from the left relation and the matching tuples from the right relation.
+* Right Join: This algorithm returns all the tuples from the right relation and the matching tuples from the left relation.
+* Full Outer Join: This algorithm returns all the tuples from both relations, including the tuples with no matching values.
+* Cross Product Join: This algorithm returns all the possible combinations of tuples from both relations.
+* Natural Join: This algorithm returns only the tuples that have matching values in both relations, and the tuples with no matching values are not returned.
+3. PROJECT:
+There are several algorithms for implementing the PROJECT operator, including:
+* Simple Projection: This algorithm returns only the specified columns from the input relation.
+* Projection with Sorting: This algorithm projects the input relation onto a subset of columns and sorts the resulting relation by the selected columns.
+* Projection with Limit: This algorithm projects the input relation onto a subset of columns and limits the number of tuples returned based on the specified limit.
+4. UNION:
+There are several algorithms for implementing the UNION operator, including:
+* Union by Rank: This algorithm ranks the tuples from each relation based on their values, and then combines the ranked tuples from each relation.
+* Union by Hash: This algorithm uses a hash function to map the tuples from each relation to a common space, and then combines the tuples from each relation based on their hash values.
+* Union by Sorting: This algorithm sorts the tuples from each relation, and then combines the sorted tuples from each relation.
+5. INTERSECT:
+There are several algorithms for implementing the INTERSECT operator, including:
+* Intersect by Rank: This algorithm ranks the tuples from each relation based on their values, and then combines the ranked tuples from each relation.
+* Intersect by Hash: This algorithm uses a hash function to map the tuples from each relation to a common space, and then combines the tuples from each relation based on their hash values.
+* Intersect by Sorting: This algorithm sorts the tuples from each relation, and then combines the sorted tuples from each relation.
+6. SET DIFFERENCE:
+There are several algorithms for implementing the SET DIFFERENCE operator, including:
+* Set Difference by Rank: This algorithm ranks the tuples from each relation based on their values, and then compares the ranks of the tuples from each relation to determine the difference.
+* Set Difference by Hash: This algorithm uses a hash function to map the tuples from each relation to a common space, and then compares the hash values of the tuples from each relation to determine the difference.
+* Set Difference by Sorting: This algorithm sorts the tuples from each relation, and then compares the sorted tuples from each relation to determine the difference.
+7. CARTESIAN PRODUCT:
+There are several algorithms for implementing the CARTESIAN PRODUCT operator, including:
+* Cartesian Product by Rank: This algorithm ranks the tuples from each relation based on their values, and then combines the ranked tuples from each relation to form the Cartesian product.
+* Cartesian Product by Hash: This algorithm uses a hash function to map the tuples from each relation to a common space, and then combines the tuples from each relation based on their hash values to form the Cartesian product.
+* Cartesian Product by Sorting: This algorithm sorts the tuples from each relation, and then combines the sorted tuples from each relation to form the Cartesian product.
+
+In summary, the choice of algorithm for implementing a relational operator depends on the specific requirements of the query, such as the size of the input relations, the complexity of the selection criteria, and the desired output format.
+-----------
+Discuss the different types of transaction failures. What is meant by cata-
+strophic failure? références
+
+Transactions failures can occur due to various reasons, and they can be broadly classified into different types. Here are some common types of transaction failures:
+
+1. Temporary Failure: This type of failure occurs when a transaction is unable to complete due to temporary issues such as network connectivity problems, insufficient system resources, or database unavailability. These types of failures are usually temporary and can be resolved by restarting the transaction or retrying it after some time.
+2. Permanent Failure: This type of failure occurs when a transaction is unable to complete due to permanent issues such as hardware or software failures, data corruption, or incorrect configuration. These types of failures can be more challenging to resolve and may require manual intervention or system restart.
+3. Catastrophic Failure: This type of failure is the most severe and occurs when a transaction is unable to complete due to a major system failure or disaster such as a power outage, system crash, or natural disaster. These types of failures can result in significant data loss or system damage and may require extensive recovery efforts.
+4. By-Pass Failure: This type of failure occurs when a transaction is unable to complete due to a by-pass mechanism that is in place to prevent the transaction from completing. For example, a by-pass mechanism may be used to prevent a transaction from completing if the transaction is deemed to be too risky or if the transaction is not critical to the system's operation.
+5. Timeout Failure: This type of failure occurs when a transaction is unable to complete within a specified time limit. This can happen if the transaction is too complex or if there are delays in the system due to other transactions or network issues.
+6. Resource Failure: This type of failure occurs when a transaction is unable to complete due to a lack of system resources such as memory, CPU, or network bandwidth. This can happen if the system is under heavy load or if there are issues with the resource allocation.
+7. Logic Failure: This type of failure occurs when a transaction is unable to complete due to a logical error in the transaction itself. This can happen if the transaction is not well-designed or if there are issues with the transaction's logic.
+
+Catastrophic failure is a term used to describe a failure that results in the complete loss of data or system functionality. This type of failure is often associated with natural disasters or major system crashes. Catastrophic failures can be challenging to recover from and may require extensive data recovery efforts or system rebuilding.
+
+References:
+
+* "Types of Transaction Failures" by Oracle Corporation
+* "Understanding Transaction Failures" by IBM
+* "Catastrophic Failure" by Merriam-Webster Dictionary
+-----------
+BOOKS(Book#, Primary_author, Topic, Total_stock, $price)
+BOOKSTORE(Store#, City, State, Zip, Inventory_value)
+STOCK(Store#, Book#, Qty)
+Total_stock is the total number of books in stock, and Inventory_value is the
+total inventory value for the store in dollars.
+a. Give an example of two simple predicates that would be meaningful for
+the BOOKSTORE relation for horizontal partitioning.
+b. How would a derived horizontal partitioning of STOCK be defined based
+on the partitioning of BOOKSTORE?
+c. Show predicates by which BOOKS may be horizontally partitioned by
+topic.
+d. Show how the STOCK may be further partitioned from the partitions in
+(b) by adding the predicates in (c).
+e. How would the derived partitioning of STOCK be used to improve the
+performance of queries on the database?
+
+a. Two simple predicates that would be meaningful for the BOOKSTORE relation for horizontal partitioning are:
+
+* City = 'New York'
+* State = 'California'
+
+These predicates would allow for partitioning of the BOOKSTORE relation based on the location of the store.
+
+b. A derived horizontal partitioning of STOCK would be defined based on the partitioning of BOOKSTORE as follows:
+
+STOCK_new_york = STOCK(Store#, Book#, Qty) WHERE City = 'New York'
+STOCK_california = STOCK(Store#, Book#, Qty) WHERE State = 'California'
+
+This partitioning would allow for faster querying of books in specific locations.
+
+c. BOOKS may be horizontally partitioned by topic as follows:
+
+BOOKS_fiction = BOOKS(Book#, Primary_author, Topic = 'Fiction')
+BOOKS_non_fiction = BOOKS(Book#, Primary_author, Topic = 'Non-fiction')
+
+d. The STOCK relation may be further partitioned from the partitions in (b) by adding the following predicates:
+
+STOCK_fiction = STOCK(Store#, Book#, Qty) WHERE Topic = 'Fiction'
+STOCK_non_fiction = STOCK(Store#, Book#, Qty) WHERE Topic = 'Non-fiction'
+
+e. The derived partitioning of STOCK would be used to improve the performance of queries on the database by allowing for faster querying of books in specific locations or topics. For example, a query to find the total number of fiction books in stock in New York would be faster if it was executed on the STOCK_fiction partition, rather than searching through the entire STOCK relation.
+-----------
+Composite and multivalued attributes can be nested to any number of lev-
+els. Suppose we want to design an attribute for a STUDENT entity type to
+keep track of previous college education. Such an attribute will have one
+entry for each college previously attended, and each such entry will be com-
+posed of college name, start and end dates, degree entries (degrees awarded
+at that college, if any), and transcript entries (courses completed at that col-
+lege, if any). Each degree entry contains the degree name and the month and
+year the degree was awarded, and each transcript entry contains a course
+name, semester, year, and grade. Design an attribute to hold this informa-
+tion.
+
+Answer:
+
+The attribute for previous college education would be a composite at-
+tribute, with the following structure:
+
+* College (primary key)
+	+ Name
+	+ Start Date
+	+ End Date
+	+ Degrees (composite)
+		+ Degree Name
+		+ Month and Year of Award
+	+ Transcript (composite)
+		+ Course Name
+		+ Semester
+		+ Year
+		+ Grade
+
+Explanation:
+
+* The primary key of the attribute is the college name, which is a unique
+	 identifier for each college attended by the student.
+* The Degrees and Transcript composites are nested inside the College
+	 composite, indicating that each college attended has multiple degrees
+	 and courses completed.
+* The Degrees composite contains a list of degree entries, each containing
+	 the degree name and the month and year the degree was awarded.
+* The Transcript composite contains a list of transcript entries, each con-
+	taining the course name, semester, year, and grade.
+
+This design allows us to store information about multiple degrees and courses
+completed at each college attended by the student, and to easily access
+and manipulate this information through the use of nested composites.
+-----------
